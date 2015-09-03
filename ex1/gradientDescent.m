@@ -18,6 +18,18 @@ for iter = 1:num_iters
     %
 
 
+	%hypothesis func for each obs * val of each obs guve grad:
+	H=X*theta; %size(X) = 97 x 2, size(theta) = 2 x 1, size(H) therefore is 97 x 1
+	diffs = H-y; %vector sub= size(diffs) = 97 x 1
+    %size(diffs') = 1 x 97
+    %diffs' * X = 1 x 97 * 97 x 2 = 1 x 2 matrix (new thetas)
+    thetasnew = diffs' * X;
+    %(size(thetasnew) = 1x2)
+    %size(theta) = 2 x 1
+    %size(thetasnew') = 2x1
+    %so substract (alpha/m)*thetasnew' from theta to give updated thetas:
+    theta = theta - (alpha/m)*thetasnew';
+     
 
 
 
