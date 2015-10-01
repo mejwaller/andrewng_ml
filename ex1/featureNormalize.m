@@ -26,6 +26,11 @@ sigma = zeros(1, size(X, 2));
 % Hint: You might find the 'mean' and 'std' functions useful.
 %       
 
+mu = mean(X); %47 x 2
+sigma=std(X); %47 x 2
+
+
+
 
 
 
