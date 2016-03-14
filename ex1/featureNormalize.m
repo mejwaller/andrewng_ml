@@ -29,10 +29,13 @@ sigma = zeros(1, size(X, 2));
 mu = mean(X); %47 x 2
 sigma=std(X); %47 x 2
 
+%mu
+%sigma
+
 %?:
 for i=1:length(mu)
-  X_norm(:,i)=X(:,i)-mu(i)
-  X_norm(:,i)/=sigma(i)
+  X_norm(:,i)=X(:,i)-mu(i);
+  X_norm(:,i)/=sigma(i);
 endfor
 
 

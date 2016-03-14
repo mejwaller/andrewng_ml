@@ -13,7 +13,7 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-%H(theta) = theta0*theta1*x
+%H(theta) = theta0+theta1*x
 %size(X) = 97 x 2 (97 obs, '1' for x0, and data(:,1) for x1
 %size(theta) = 2*1
 %so vectorizing, multiply X and theta giving a 97 x 1 vector of H for each obs:
